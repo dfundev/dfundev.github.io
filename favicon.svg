@@ -1,10 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#0a84ff"/>
       <stop offset="1" stop-color="#6aa6ff"/>
     </linearGradient>
+    <clipPath id="r">
+      <rect x="24" y="24" width="464" height="464" rx="80" ry="80"/>
+    </clipPath>
   </defs>
-  <rect rx="14" ry="14" width="64" height="64" fill="#0f1117"/>
-  <path d="M14 42l9-22h8l-9 22h-8zm19 0l9-22h8l-9 22h-8z" fill="url(#g)"/>
+  <rect x="24" y="24" width="464" height="464" rx="80" ry="80" fill="#0f1117"/>
+  <g clip-path="url(#r)" opacity="0.65">
+    <radialGradient id="v" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60 60) rotate(45) scale(500)">
+      <stop stop-color="#0a84ff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#0a84ff" stop-opacity="0"/>
+    </radialGradient>
+    <rect x="0" y="0" width="512" height="512" fill="url(#v)"/>
+  </g>
+  <g>
+    <rect x="240" y="140" width="32" height="232" rx="8" fill="url(#g)"/>
+    <path d="M240 140 h-24 a116 116 0 0 0 0 232 h24 z" fill="url(#g)"/>
+    <path d="M240 176 h-18 a80 80 0 0 0 0 160 h18 z" fill="#0f1117"/>
+    <rect x="272" y="140" width="116" height="28" rx="8" fill="url(#g)"/>
+    <rect x="272" y="236" width="96"  height="28" rx="8" fill="url(#g)"/>
+  </g>
 </svg>
